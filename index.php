@@ -6,6 +6,8 @@
 */
 
 header('Access-Control-Allow-Origin: http://localhost:8888');
+header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Methods: GET, POST, UPDATE, PUT');
 
 //get http request method
 $httpMethod = $_SERVER['REQUEST_METHOD'];
