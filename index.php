@@ -8,7 +8,7 @@
 header('Access-Control-Allow-Origin: http://localhost:8888');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: GET, POST, UPDATE, PUT');
-// header('Access-Control-Allow-Max-Age: 5000');
+header('Access-Control-Allow-Max-Age: 5000');
 
 //get http request method
 $httpMethod = $_SERVER['REQUEST_METHOD'];
