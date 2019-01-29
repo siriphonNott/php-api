@@ -23,6 +23,10 @@ $responseContentType = explode(";" , $contentType)[0];
 require('SimpleRest.php');
 $rest = new SimpleRest($responseContentType);
 
+for ($i=0; $i < 100000; $i++) { 
+  $test[] = $i;
+}
+
 //Set default http status code = 200
 $httpStatusCode = 200; 
 
