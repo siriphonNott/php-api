@@ -5,6 +5,8 @@
   created at: 29/01/19
 */
 
+header('Access-Control-Allow-Origin: http://localhost:8888');
+
 //get http request method
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 
