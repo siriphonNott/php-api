@@ -1,0 +1,1 @@
+lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; set ssl:verify-certificate no; mirror -R / /projects/app01"
