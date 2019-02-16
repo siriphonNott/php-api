@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  api:
+    container_name: php_api
+    image: php:7.2-apache
+    volumes:
+      - $PWD/:/var/www/html
+    ports:
+      - 8103:80
+    restart: always

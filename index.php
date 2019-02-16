@@ -5,7 +5,7 @@
   created at: 29/01/19
 */
 
-header('Access-Control-Allow-Origin: http://localhost:8888');
+header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: GET, POST, UPDATE, PUT');
 header('Access-Control-Allow-Max-Age: 5000');   // cache for 1 day
@@ -62,6 +62,7 @@ switch ($httpMethod) {
 }
 
 //Response data
+
 $rest->setHttpStatus($httpStatusCode);
 echo $rest->response($body['data']);
 
